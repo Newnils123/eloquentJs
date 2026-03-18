@@ -3,17 +3,22 @@
 - [Histoire](#histoire)
 - [Quelques exemples](#quelques-exemples)
   - [Exemple de boucle while](#exemple-de-boucle-while)
+  - [Exemple de boucle for](#exemple-de-boucle-for)
+  - [Exemple de boucle for...of](#exemple-de-boucle-forof)
   - [Exemple de fonction factorielle](#exemple-de-fonction-factorielle)
 - [Les valeurs](#les-valeurs)
   - [Comment déclarer une variable ?](#comment-déclarer-une-variable)
 - [Les fonctions et conditions](#les-fonctions-et-conditions)
   - [Les fonctions](#les-fonctions)
   - [Les conditions](#les-conditions)
-- [Les strings (chaînes de caractères)](#les-strings-chaînes-de-caractères)
-  - [Concaténation de strings](#concaténation-de-strings)
-  - [Templates literals](#templates-literals)
-  - [Comparaison de chaînes](#comparaison-de-chaînes)
-  - [Subtilités à connaître](#subtilités-à-connaître)
+- [Les boucles](#les-boucles)
+  - [Introduction aux boucles](#introduction-aux-boucles)
+  - [La boucle while](#la-boucle-while)
+  - [La boucle for](#la-boucle-for)
+  - [La boucle for...of](#la-boucle-forof)
+  - [La boucle do...while](#la-boucle-dowhile)
+  - [Comparaison des boucles](#comparaison-des-boucles)
+  - [Erreurs courantes avec les boucles](#erreurs-courantes-avec-les-boucles)
 
 ---
 
@@ -43,6 +48,40 @@ console.log(total);
 > On définit `total` contenant 0 et `count` qui "commence" à 1, <br>
 > tant que `count` <= 10, on ajoute `count` à `total` puis on augmente `count` de 1 <br>
 > lorsque `count = 11`, on stop la boucle puis on affiche la variable `total` dans la console via `console.log(total)`. <br>
+
+### Exemple de boucle for
+
+```javascript
+let result = 1;
+for (let i = 1; i <= 5; i++) {
+  result *= i;
+}
+console.log(result);
+// → 120
+```
+
+> Explications : <br>
+> On initialise `result` à 1. <br>
+> La boucle commence avec `i = 1` et continue tant que `i <= 5`. <br>
+> À chaque itération, on multiplie `result` par `i` et on incrémente `i`. <br>
+> À la fin, on affiche `result` qui contient la valeur de `1 * 2 * 3 * 4 * 5` soit `120`. <br>
+
+### Exemple de boucle for...of
+
+```javascript
+let array = ["apple", "banana", "cherry"];
+for (let fruit of array) {
+  console.log(fruit);
+}
+// → apple
+// → banana
+// → cherry
+```
+
+> Explications : <br>
+> On utilise une boucle `for...of` pour parcourir chaque élément d'un tableau. <br>
+> À chaque itération, la variable `fruit` contient un élément du tableau `array`. <br>
+> On affiche chaque élément dans la console. <br>
 
 ### Exemple de fonction factorielle
 
@@ -585,3 +624,159 @@ Ligne 3`;
 ```javascript
 const texte = "Ligne 1 \nLigne 2 \nLigne 3";
 ```
+
+---
+
+## Les boucles
+
+### Introduction aux boucles
+
+Les boucles sont des outils puissants en programmation qui permettent d'exécuter un bloc de code plusieurs fois. Elles sont utilisées dans de nombreux cas pratiques, comme :
+
+- Parcourir des listes d'éléments (par exemple, une liste de produits dans un panier d'achat).
+- Répéter des calculs jusqu'à atteindre un résultat précis.
+- Automatiser des tâches répétitives, comme envoyer des emails à plusieurs destinataires.
+
+#### Exemple réel : Calculer la moyenne des notes d'une classe
+
+```javascript
+let notes = [15, 18, 12, 10, 14];
+let total = 0;
+for (let note of notes) {
+  total += note;
+}
+let moyenne = total / notes.length;
+console.log(`La moyenne est de ${moyenne}`);
+// → La moyenne est de 13.8
+```
+
+> Ici, une boucle `for...of` est utilisée pour additionner toutes les notes dans un tableau.
+
+---
+
+### La boucle while
+
+La boucle `while` est idéale lorsque vous ne savez pas à l'avance combien de fois le code devra s'exécuter. Elle repose sur une condition qui est vérifiée avant chaque itération.
+
+#### Exemple réel : Attendre qu'un utilisateur entre une valeur correcte
+
+```javascript
+let input;
+while (!input || input.length < 3) {
+  input = prompt("Entrez un mot de passe (au moins 3 caractères) :");
+}
+console.log("Mot de passe accepté");
+```
+
+> Cette boucle continue de demander un mot de passe tant que l'utilisateur n'entre pas une valeur valide.
+
+---
+
+### La boucle for
+
+La boucle `for` est parfaite lorsque le nombre d'itérations est connu à l'avance. Elle est souvent utilisée pour parcourir des tableaux ou effectuer des calculs répétitifs.
+
+#### Exemple réel : Générer une table de multiplication
+
+```javascript
+let nombre = 7;
+for (let i = 1; i <= 10; i++) {
+  console.log(`${nombre} x ${i} = ${nombre * i}`);
+}
+```
+
+> Cette boucle génère et affiche la table de multiplication pour le nombre 7.
+
+---
+
+### La boucle for...of
+
+La boucle `for...of` est utilisée pour parcourir les éléments d'une structure itérable, comme un tableau ou une chaîne de caractères.
+
+#### Exemple réel : Afficher les noms des employés
+
+```javascript
+let employes = ["Alice", "Bob", "Charlie"];
+for (let employe of employes) {
+  console.log(`Bonjour, ${employe} !`);
+}
+```
+
+> Cette boucle parcourt un tableau de noms et affiche un message personnalisé pour chaque employé.
+
+---
+
+### La boucle do...while
+
+La boucle `do...while` garantit que le bloc de code est exécuté au moins une fois, même si la condition est fausse dès le départ.
+
+#### Exemple réel : Simuler un jeu de dés
+
+```javascript
+let lancer;
+do {
+  lancer = Math.floor(Math.random() * 6) + 1;
+  console.log(`Vous avez lancé un ${lancer}`);
+} while (lancer !== 6);
+console.log("Félicitations, vous avez obtenu un 6 !");
+```
+
+> Cette boucle simule un lancer de dés jusqu'à ce que le joueur obtienne un 6.
+
+---
+
+### Comparaison des boucles
+
+Chaque type de boucle a ses avantages et inconvénients. Voici un tableau récapitulatif :
+
+| Type de boucle | Avantages                                        | Inconvénients                            |
+| -------------- | ------------------------------------------------ | ---------------------------------------- |
+| `while`        | Flexible, idéal pour des conditions dynamiques   | Risque de boucle infinie si mal utilisée |
+| `for`          | Simple et clair pour un nombre fixe d'itérations | Moins adapté aux conditions dynamiques   |
+| `for...of`     | Lisible, parfait pour les tableaux               | Ne donne pas accès à l'index             |
+| `do...while`   | Exécute toujours au moins une fois               | Moins utilisé, peut être déroutant       |
+
+---
+
+### Erreurs courantes avec les boucles
+
+1. **Boucles infinies** :
+   Une boucle infinie se produit lorsque la condition de sortie n'est jamais remplie.
+
+   ```javascript
+   let i = 0;
+   while (i < 5) {
+     console.log(i);
+     // Oubli d'incrémenter i
+   }
+   ```
+
+2. **Mauvaise condition** :
+   Une condition incorrecte peut entraîner des résultats inattendus.
+
+   ```javascript
+   for (let i = 0; i <= 10; i--) {
+     // Mauvaise incrémentation
+     console.log(i);
+   }
+   ```
+
+3. **Modification de la structure pendant l'itération** :
+   Modifier un tableau pendant qu'on le parcourt peut causer des erreurs.
+
+   ```javascript
+   let array = [1, 2, 3];
+   for (let i = 0; i < array.length; i++) {
+     array.pop();
+   }
+   ```
+
+4. **Utilisation incorrecte de `for...of`** :
+   Si vous avez besoin de l'index, utilisez `for` au lieu de `for...of`.
+
+   ```javascript
+   let fruits = ["pomme", "banane", "cerise"];
+   for (let i = 0; i < fruits.length; i++) {
+     console.log(`${i}: ${fruits[i]}`);
+   }
+   ```
