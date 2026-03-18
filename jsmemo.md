@@ -1,5 +1,6 @@
 # Table des matières
 
+- [Pistes d'amélioration du mémo](#pistes-damelioration)
 - [Histoire](#histoire)
 - [Quelques exemples](#quelques-exemples)
   - [Exemple de boucle while](#exemple-de-boucle-while)
@@ -7,10 +8,29 @@
   - [Exemple de boucle for...of](#exemple-de-boucle-forof)
   - [Exemple de fonction factorielle](#exemple-de-fonction-factorielle)
 - [Les valeurs](#les-valeurs)
-  - [Comment déclarer une variable ?](#comment-déclarer-une-variable)
+  - [Comment déclarer une variable ?](#comment-declarer-une-variable)
+- [Les strings](#les-strings)
+  - [Concaténation de strings](#concatenation-de-strings)
+  - [Templates literals](#templates-literals)
+  - [Comparaison de chaînes](#comparaison-de-chaines)
+  - [Subtilités à connaître](#subtilites-a-connaitre)
+  - [Les opérateurs de comparaison](#les-operateurs-de-comparaison)
+  - [Les opérateurs de logique](#les-operateurs-de-logique)
+  - [L'opérateur conditionnel (ternaire)](#operateur-conditionnel-ternaire)
+- [Les valeurs vides](#les-valeurs-vides)
+  - [Comparaison entre null et undefined](#comparaison-null-undefined)
+  - [Les cas d'utilisation](#les-cas-dutilisation)
+- [Conversion de type automatique](#conversion-de-type-automatique)
+- [Circuit court des opérateurs logiques](#circuit-court-operateurs-logiques)
 - [Les fonctions et conditions](#les-fonctions-et-conditions)
   - [Les fonctions](#les-fonctions)
   - [Les conditions](#les-conditions)
+- [Le DOM](#le-dom)
+  - [Comprendre le DOM](#comprendre-le-dom)
+  - [Sélectionner des éléments](#selectionner-des-elements)
+  - [Modifier le contenu et les attributs](#modifier-contenu-et-attributs)
+  - [Écouter des événements](#ecouter-des-evenements)
+  - [Créer et supprimer des éléments](#creer-et-supprimer-des-elements)
 - [Les boucles](#les-boucles)
   - [Introduction aux boucles](#introduction-aux-boucles)
   - [La boucle while](#la-boucle-while)
@@ -22,6 +42,19 @@
 
 ---
 
+<a id="pistes-damelioration"></a>
+
+## Pistes d'amélioration du mémo
+
+1. Ajouter des mini-exercices corrigés en fin de grande section.
+2. Uniformiser le style des titres (retirer les `:` en fin de titre si possible).
+3. Ajouter une section dédiée aux tableaux/objets (`map`, `filter`, `find`, destructuration).
+4. Ajouter une section sur la gestion des erreurs (`try...catch`) et le debug (`console.table`, breakpoints).
+5. Ajouter des bonnes pratiques modernes : `const` par défaut, fonctions courtes, noms explicites.
+6. Ajouter une section asynchrone (`Promise`, `async/await`, `fetch`) pour relier JavaScript au web réel.
+
+<a id="histoire"></a>
+
 ## Histoire
 
 > Javascript a été introduit en 1995 pour ajouter des programmes sur les pages web dans le Netscape Navigator. <br>
@@ -29,7 +62,11 @@
 > Il est important de noter que JavaScript n'a aucun lien avec le langage de programmation Java. Son nom est un élément marketing. <br>
 > Le langage est aussi utilisé par des bases de données telles que MongoDB et CouchDB qui l'emploient en tant que langage de requêtes. <br>
 
+<a id="quelques-exemples"></a>
+
 ## Quelques exemples :
+
+<a id="exemple-de-boucle-while"></a>
 
 ### Exemple de boucle while
 
@@ -49,6 +86,8 @@ console.log(total);
 > tant que `count` <= 10, on ajoute `count` à `total` puis on augmente `count` de 1 <br>
 > lorsque `count = 11`, on stop la boucle puis on affiche la variable `total` dans la console via `console.log(total)`. <br>
 
+<a id="exemple-de-boucle-for"></a>
+
 ### Exemple de boucle for
 
 ```javascript
@@ -66,6 +105,8 @@ console.log(result);
 > À chaque itération, on multiplie `result` par `i` et on incrémente `i`. <br>
 > À la fin, on affiche `result` qui contient la valeur de `1 * 2 * 3 * 4 * 5` soit `120`. <br>
 
+<a id="exemple-de-boucle-forof"></a>
+
 ### Exemple de boucle for...of
 
 ```javascript
@@ -82,6 +123,8 @@ for (let fruit of array) {
 > On utilise une boucle `for...of` pour parcourir chaque élément d'un tableau. <br>
 > À chaque itération, la variable `fruit` contient un élément du tableau `array`. <br>
 > On affiche chaque élément dans la console. <br>
+
+<a id="exemple-de-fonction-factorielle"></a>
 
 ### Exemple de fonction factorielle
 
@@ -101,6 +144,8 @@ function factorial(n) {
 > si c'est le cas, on renvoie `1` <br>
 > sinon, on renvoie `n * factorial(n - 1)` donc on calcule la factorielle d'un nombre. <br>
 > Pour `n = 8` par exemple, on renvoie donc le résultat de `8 * 7 * 6 * 5 * 4 * 3 * 2 * 1` soit `40320`.
+
+<a id="les-valeurs"></a>
 
 ## Les valeurs :
 
@@ -127,6 +172,8 @@ Il est aussi possible d'écrire des nombres sous forme de notation scientifique.
 > En notation scientifique cela donne `2.998 × 10⁸` <br>
 > Mais on peut aussi l'écrire `2.998e8`. Ce qui sera la forme utilisée en Javascript.
 
+<a id="comment-declarer-une-variable"></a>
+
 ### Comment déclarer une variable ? :
 
 ```javascript
@@ -139,10 +186,14 @@ const c = a * b;
 > Une variable déclarée avec `const` ne peut être réassignée car il s'agit d'une constante <br>
 > Une variable peut tout autant contenir une opération qui se conforme bien entendu à la priorité des opérations.
 
+<a id="les-strings"></a>
+
 ## Les strings (chaînes de caractères) :
 
 Les strings sont un autre type de données basiques. On les utilise pour représenter du texte. <br>
 Elles sont placées entre des `quotes` <br>
+
+<a id="concatenation-de-strings"></a>
 
 ### Concaténation de strings
 
@@ -170,6 +221,8 @@ const b = 'Il faut sélectionner "register".';
 const a = "Il fait beau aujourd'hui !";
 const b = 'Il faut sélectionner "register".';
 ```
+
+<a id="templates-literals"></a>
 
 ### Templates literals
 
@@ -218,6 +271,8 @@ const texte = "Ligne 1 \nLigne 2 \nLigne 3";
 
 > On remarque que c'est beaucoup moins lisible qu'avec les `backticks`.
 
+<a id="comparaison-de-chaines"></a>
+
 ### Comparaison de chaînes
 
 En JavaScript, les chaînes sont comparées lettre par lettre, en utilisant les valeurs Unicode des caractères.
@@ -227,6 +282,8 @@ console.log("Abracadabra" < "Zoro"); // true
 ```
 
 > Ici, `"A"` est avant `"Z"` dans l'alphabet, donc `"Abracadabra"` est considérée comme plus petite que `"Zoro"`.
+
+<a id="subtilites-a-connaitre"></a>
 
 ### Subtilités à connaître
 
@@ -243,6 +300,8 @@ console.log("!" < "A"); // true
 ```
 
 > Résumé : la comparaison suit l'ordre Unicode, pas forcément l'ordre alphabétique "humain".
+
+<a id="les-operateurs-de-comparaison"></a>
 
 ### Les opérateurs de comparaison
 
@@ -315,6 +374,8 @@ En pratique, on privilégie `===` plutôt que `==` pour éviter les comportement
 ```javascript
 console.log(NaN == NaN); // false
 ```
+
+<a id="les-operateurs-de-logique"></a>
 
 ### Les opérateurs de logique
 
@@ -392,6 +453,8 @@ Pour ce qui est des valeurs `truthy`, tout ce qui n'est pas `falsy` est `truthy`
 "0"
 ```
 
+<a id="operateur-conditionnel-ternaire"></a>
+
 ### `?` L'opérateur conditionnel (ternaire)
 
 L’opérateur `?` est un `"opérateur conditionnel"` ternaire.
@@ -402,6 +465,8 @@ const number = 47;
 
 console.log(number % 2 === 0 ? "le nombre est pair" : "le nombre est impair"); // le nombre est impair
 ```
+
+<a id="les-valeurs-vides"></a>
 
 ## Les valeurs vides
 
@@ -421,6 +486,8 @@ console.log(b); // null
 console.log(typeof b); // "object" (c'est un bug historique du JS)
 ```
 
+<a id="comparaison-null-undefined"></a>
+
 ### Comparaison entre `null` et `undefined`
 
 ```javascript
@@ -428,10 +495,14 @@ console.log(null == undefined); // true
 console.log(null === undefined); // false
 ```
 
+<a id="les-cas-dutilisation"></a>
+
 ### Les cas d'utilisation
 
 - `undefined` est souvent géré automatiquement par JS (variables, fonctions sans `return`, propriétés manquantes).
 - `null` est utilisé quand tu veux explicitement dire "il n'y a pas de valeurs ici".
+
+<a id="conversion-de-type-automatique"></a>
 
 ## Conversion de type automatique
 
@@ -460,7 +531,9 @@ console.log(null == 0); // false
 
 > Ce procédé est souvent utile quand on veut tester si une variable a une vrai valeur au lieu d'être `null` ou `undefined`.
 
-## Circulation courte des opérateurs logiques
+<a id="circuit-court-operateurs-logiques"></a>
+
+## Circuit court des opérateurs logiques
 
 Les opérateurs logiques `&&` et `||` ne retournent pas forcément `true` ou `false`, mais peuvent retourner une des valeurs de l'expression.
 
@@ -483,7 +556,11 @@ L'opérateur `&&` fonctionne de manière similaire, mais il retourne la premièr
 
 Une autre propriété importante de ces opérateurs est qu'ils évaluent les expressions de gauche à droite et s'arrêtent dès que le résultat est déterminé (c'est ce qu'on appelle la "une évaluation à circulation courte").
 
+<a id="les-fonctions-et-conditions"></a>
+
 ## Les fonctions et conditions
+
+<a id="les-fonctions"></a>
 
 ### Les fonctions
 
@@ -514,6 +591,8 @@ console.log(multiplier(4, 7));
 > Les fonctions permettent de regrouper du code réutilisable. <br>
 > Elles peuvent être déclarées de différentes manières : classique, anonyme ou fléchée. <br>
 > Les fonctions fléchées sont particulièrement utiles pour leur syntaxe concise. <br>
+
+<a id="les-conditions"></a>
 
 ### Les conditions
 
@@ -548,86 +627,120 @@ console.log(`Vous êtes ${estMajeur}.`);
 
 ---
 
-## Les strings (chaînes de caractères) :
+<a id="le-dom"></a>
 
-Les strings sont un autre type de données basiques. On les utilise pour représenter du texte. <br>
-Elles sont placées entre des `quotes` <br>
+## Le DOM
 
-### Concaténation de strings
+Le DOM (Document Object Model) est la représentation en objets de la page HTML.
+Grâce au DOM, JavaScript peut lire et modifier la page sans recharger le navigateur.
 
-```javascript
-const a = "Hello";
-const b = "World";
-const c = ` !`;
+<a id="comprendre-le-dom"></a>
 
-console.log(a + b + c);
-// Hello World !
+### Comprendre le DOM
+
+Pense au DOM comme à un arbre :
+
+- `document` est la racine.
+- Chaque balise HTML est un noeud.
+- On navigue dans cet arbre pour cibler un élément précis.
+
+Exemple HTML :
+
+```html
+<body>
+  <h1 id="titre">Bienvenue</h1>
+  <p class="description">Texte initial</p>
+</body>
 ```
 
-> Les `simple quotes` sont utilisées pour stocker une chaîne de caractères simple.<br>
-> Les `double quotes` ont exactement les mêmes propriétés que les `simple quotes`. <br>
-> Notez qu'il faut utiliser un caractère d'échappement si un autre de ces caractères est employé.<br>
+<a id="selectionner-des-elements"></a>
+
+### Sélectionner des éléments
 
 ```javascript
-const a = "Il fait beau aujourd'hui !";
-const b = 'Il faut sélectionner "register".';
+const titre = document.getElementById("titre");
+const description = document.querySelector(".description");
+const paragraphes = document.querySelectorAll("p");
+
+console.log(titre.textContent);
+console.log(paragraphes.length);
 ```
 
-> Bien qu'il soit préférable d'inverser les types de guillemets <br>
+> `querySelector` retourne le premier élément qui correspond au sélecteur.
+> `querySelectorAll` retourne une liste (NodeList) de tous les éléments correspondants.
+
+<a id="modifier-contenu-et-attributs"></a>
+
+### Modifier le contenu et les attributs
 
 ```javascript
-const a = "Il fait beau aujourd'hui !";
-const b = 'Il faut sélectionner "register".';
+const titre = document.getElementById("titre");
+
+titre.textContent = "Nouveau titre";
+titre.style.color = "teal";
+titre.setAttribute("data-role", "main-title");
 ```
 
-### Templates literals
+Bonnes pratiques :
 
-> Et dans la syntaxe moderne, on peut aussi utiliser les `back ticks` : <br>
+- Préfèrez `textContent` pour insérer du texte simple.
+- Utilisez `innerHTML` uniquement si vous devez injecter du HTML, avec prudence.
+
+<a id="ecouter-des-evenements"></a>
+
+### Écouter des événements
 
 ```javascript
-const a = `Il fait beau aujourd'hui !`;
-const b = `Il faut sélectionner "register".`;
+const bouton = document.querySelector("#btn");
+
+bouton.addEventListener("click", () => {
+  console.log("Bouton cliqué !");
+});
 ```
 
-Les `single quotes` et `double quotes` peuvent être concaténées.
+Exemples d'événements fréquents : `click`, `input`, `submit`, `keydown`.
+
+<a id="creer-et-supprimer-des-elements"></a>
+
+### Créer et supprimer des éléments
 
 ```javascript
-const prenom = "Alice";
-const message = "Bonjour " + prenom + " !";
-console.log(message);
+const liste = document.querySelector("#liste");
+
+const nouvelElement = document.createElement("li");
+nouvelElement.textContent = "Nouvel item";
+
+liste.appendChild(nouvelElement);
+
+// Suppression
+nouvelElement.remove();
 ```
 
-> En JavaScript, les chaînes définies avec ' ou " sont équivalentes et <br>
-> peuvent être mélangées lors d’une concaténation.
-
-Les `back ticks` permettent de créer des **templates literals**.
+Mini-exemple complet :
 
 ```javascript
-const nom = "Alice";
-const message = `Bonjour ${nom} !`;
+const input = document.querySelector("#todo-input");
+const bouton = document.querySelector("#todo-add");
+const liste = document.querySelector("#todo-list");
 
-console.log(message); // Bonjour Alice !
-```
+bouton.addEventListener("click", () => {
+  const texte = input.value.trim();
+  if (!texte) return;
 
-> ici, `${nom}` est interpolé dans la chaîne. Et ceci n'est possible que grâce au backticks.
-
-Avec ceci on peut aussi faire du multilignes :
-
-```javascript
-const texte = `Ligne 1
-Ligne 2
-Ligne 3`;
-```
-
-> Alors, qu'avec des `quotes`, il faudrait faire comme ceci :
-
-```javascript
-const texte = "Ligne 1 \nLigne 2 \nLigne 3";
+  const li = document.createElement("li");
+  li.textContent = texte;
+  liste.appendChild(li);
+  input.value = "";
+});
 ```
 
 ---
 
+<a id="les-boucles"></a>
+
 ## Les boucles
+
+<a id="introduction-aux-boucles"></a>
 
 ### Introduction aux boucles
 
@@ -654,6 +767,8 @@ console.log(`La moyenne est de ${moyenne}`);
 
 ---
 
+<a id="la-boucle-while"></a>
+
 ### La boucle while
 
 La boucle `while` est idéale lorsque vous ne savez pas à l'avance combien de fois le code devra s'exécuter. Elle repose sur une condition qui est vérifiée avant chaque itération.
@@ -672,6 +787,8 @@ console.log("Mot de passe accepté");
 
 ---
 
+<a id="la-boucle-for"></a>
+
 ### La boucle for
 
 La boucle `for` est parfaite lorsque le nombre d'itérations est connu à l'avance. Elle est souvent utilisée pour parcourir des tableaux ou effectuer des calculs répétitifs.
@@ -689,6 +806,8 @@ for (let i = 1; i <= 10; i++) {
 
 ---
 
+<a id="la-boucle-forof"></a>
+
 ### La boucle for...of
 
 La boucle `for...of` est utilisée pour parcourir les éléments d'une structure itérable, comme un tableau ou une chaîne de caractères.
@@ -705,6 +824,8 @@ for (let employe of employes) {
 > Cette boucle parcourt un tableau de noms et affiche un message personnalisé pour chaque employé.
 
 ---
+
+<a id="la-boucle-dowhile"></a>
 
 ### La boucle do...while
 
@@ -725,6 +846,8 @@ console.log("Félicitations, vous avez obtenu un 6 !");
 
 ---
 
+<a id="comparaison-des-boucles"></a>
+
 ### Comparaison des boucles
 
 Chaque type de boucle a ses avantages et inconvénients. Voici un tableau récapitulatif :
@@ -737,6 +860,8 @@ Chaque type de boucle a ses avantages et inconvénients. Voici un tableau récap
 | `do...while`   | Exécute toujours au moins une fois               | Moins utilisé, peut être déroutant       |
 
 ---
+
+<a id="erreurs-courantes-avec-les-boucles"></a>
 
 ### Erreurs courantes avec les boucles
 
