@@ -1,0 +1,1 @@
+# the program users console.log to display all numbers from 1 to 100 with 2 little exceptions. : for numbers divisible by 3, the output is `Fizz` and numbers divisible by 5 (and not 3), the output is `Buzz`. if the number is divisible by both, the program returns `FizzBuzz`
