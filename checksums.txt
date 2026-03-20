@@ -1,2 +1,30 @@
-7e242557db35d776a56502e72fae5160896c4bbbcb703c18de139b34a624336b *./README.md
+./checksums.txt
+5d5855ecde392667a6a5211442f52a4a62730df5d4e76520b6811b9d3b17c33c *./checksums.txt
+./checksums.txt~
+c1250de32215d67d785e949cb8073287c77b6a8840dcb8328e3bd8c61249100c *./checksums.txt~
+./exercices/boneteau/boneteau.html
+c0a550ff79b58f1390951edec4a154baacc125477a70428fa3bf4aff6c6fcf2c *./exercices/boneteau/boneteau.html
+./exercices/boneteau/README.md
+cdcd65f64988557f7f0ece6998512950f6bc0527574f0e62e2942c7bb9f5ee18 *./exercices/boneteau/README.md
+./exercices/boneteau/style.css
+1a0d4786f15db6f4e19c367ce2b62883990c7cc8559a6ef237f749d4c0e670af *./exercices/boneteau/style.css
+./exercices/functions/README.md
+b903bf5b003c99e6e9cbe2cd82df2ee07baf401bbd2369c5d472f8d37a421ab6 *./exercices/functions/README.md
+./exercices/loops/chessboard/chessboard.js
+1bca636d7e59f7564d3426e8be63c8d5700957a914f4412dc532db56ccefbbe8 *./exercices/loops/chessboard/chessboard.js
+./exercices/loops/chessboard/README.md
+23b1b9782d1118a6064bb64581dd3dba6ed65aba648b2e4f780b11ec894f8bb6 *./exercices/loops/chessboard/README.md
+./exercices/loops/fizzbuzz/FizzBuzz.js
+f7521a2a55fd213aa24fd557ec4c184d2d590226e32c1da3bb571fc0e8909859 *./exercices/loops/fizzbuzz/FizzBuzz.js
+./exercices/loops/fizzbuzz/README.md
+0dddae40a873ee8b4d3435a8d47e83612057ae111710d46873ef27016c8b24ef *./exercices/loops/fizzbuzz/README.md
+./exercices/loops/README.md
+776bc464c76b734f6641ec97cf2795cb774daac534438daf639ee64645ace230 *./exercices/loops/README.md
+./exercices/loops/triangle/README.md
+d6b1dc7066b453d28d10e934a8d1b4b0f7b87399edc48ba8a9d5d80dbcc54300 *./exercices/loops/triangle/README.md
+./exercices/loops/triangle/triangle.js
+94d7494dbe3f29edb5d69a5d85c6b6a443b0f361cddb430cad7f1c5a46eaa392 *./exercices/loops/triangle/triangle.js
+./jsmemo.md
 d649e616c053cff4995d1e0152cf6818b83c290c4bef5813dacadf23dd9f307e *./jsmemo.md
+./README.md
+7e242557db35d776a56502e72fae5160896c4bbbcb703c18de139b34a624336b *./README.md
