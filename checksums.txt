@@ -1,13 +1,15 @@
 ./checksums.txt
 5d5855ecde392667a6a5211442f52a4a62730df5d4e76520b6811b9d3b17c33c *./checksums.txt
-./checksums.txt~
-c1250de32215d67d785e949cb8073287c77b6a8840dcb8328e3bd8c61249100c *./checksums.txt~
 ./exercices/boneteau/boneteau.html
 c0a550ff79b58f1390951edec4a154baacc125477a70428fa3bf4aff6c6fcf2c *./exercices/boneteau/boneteau.html
 ./exercices/boneteau/README.md
 cdcd65f64988557f7f0ece6998512950f6bc0527574f0e62e2942c7bb9f5ee18 *./exercices/boneteau/README.md
 ./exercices/boneteau/style.css
 1a0d4786f15db6f4e19c367ce2b62883990c7cc8559a6ef237f749d4c0e670af *./exercices/boneteau/style.css
+./exercices/functions/minimum/min.js
+0527df3286cdb9ca2df3a7cad4041f4bebe4be17719ddd0d9e75c213d7915441 *./exercices/functions/minimum/min.js
+./exercices/functions/minimum/README.md
+9866646ff1fc9ff8c0c06b8d8e0e3da1c4b37e485e9d1fb1239bc2097909328e *./exercices/functions/minimum/README.md
 ./exercices/functions/README.md
 b903bf5b003c99e6e9cbe2cd82df2ee07baf401bbd2369c5d472f8d37a421ab6 *./exercices/functions/README.md
 ./exercices/loops/chessboard/chessboard.js
@@ -27,4 +29,4 @@ d6b1dc7066b453d28d10e934a8d1b4b0f7b87399edc48ba8a9d5d80dbcc54300 *./exercices/lo
 ./jsmemo.md
 d649e616c053cff4995d1e0152cf6818b83c290c4bef5813dacadf23dd9f307e *./jsmemo.md
 ./README.md
-7e242557db35d776a56502e72fae5160896c4bbbcb703c18de139b34a624336b *./README.md
+adfb5ba4338432e42fa759527c9773178c014661124c0a6b4d534b9e32adfbaf *./README.md
