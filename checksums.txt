@@ -1,11 +1,39 @@
 ./checksums.txt
 5d5855ecde392667a6a5211442f52a4a62730df5d4e76520b6811b9d3b17c33c *./checksums.txt
+./checksums.txt~
+05113dd27d01edc0be158f378af1a11a9cbd0605353276dff326c8dfd1b81de1 *./checksums.txt~
+./exercices/arrays/arrayToList/arrayToList.js
+0377806df2f258a80963e6f5cf889f86649aa0377176ff317d632c65b3be4c68 *./exercices/arrays/arrayToList/arrayToList.js
+./exercices/arrays/arrayToList/README.md
+143ec65471e3d781d0ed237c52c2648e1aef0eb7b3740d7351fb3626593cf841 *./exercices/arrays/arrayToList/README.md
+./exercices/arrays/deepEqual/deepEqual.js
+aa8b2d839cf6d3d3adec6a4414c6c1de6eb277e60de3c8cb1705d0736873cfcc *./exercices/arrays/deepEqual/deepEqual.js
+./exercices/arrays/deepEqual/README.md
+1d83943a5f09533556455a3605b3b176c64b1589813a7b3ea26214cfb704bb03 *./exercices/arrays/deepEqual/README.md
+./exercices/arrays/range/range.js
+174a9e85f7dead3398f391f528993759812746e3c9e570e4aefa2b79f4e11f95 *./exercices/arrays/range/range.js
+./exercices/arrays/range/README.md
+df79c580d691035670662deaec88f6bc56d961e1eb99f18f0d8884b48aa47cc6 *./exercices/arrays/range/README.md
+./exercices/arrays/README.md
+26648dbbf903b1803515fd5bd692c5c39d6781840940406aa97353495d699b9f *./exercices/arrays/README.md
+./exercices/arrays/reverse/README.md
+ec0ff89cf3d63cfcee3e9fc1671358c9cb2ceaa552ff3e170dda818a7c9c2fd4 *./exercices/arrays/reverse/README.md
+./exercices/arrays/reverse/reverseArray.js
+5258fcb540aabcff7e41f22123495d3bcf82223dd451351947bb87857c77e106 *./exercices/arrays/reverse/reverseArray.js
 ./exercices/boneteau/boneteau.html
 c0a550ff79b58f1390951edec4a154baacc125477a70428fa3bf4aff6c6fcf2c *./exercices/boneteau/boneteau.html
 ./exercices/boneteau/README.md
 cdcd65f64988557f7f0ece6998512950f6bc0527574f0e62e2942c7bb9f5ee18 *./exercices/boneteau/README.md
 ./exercices/boneteau/style.css
 1a0d4786f15db6f4e19c367ce2b62883990c7cc8559a6ef237f749d4c0e670af *./exercices/boneteau/style.css
+./exercices/functions/countBs/countBs.js
+e3a7c0b092f40d12b0e2a0606fae06304aaa32ecec39efaf93cf05d13f3ebd6d *./exercices/functions/countBs/countBs.js
+./exercices/functions/countBs/README.md
+834a9b8823f621030faf1f3ef356db652b8af83f48c3b09cd3286f39e1524e09 *./exercices/functions/countBs/README.md
+./exercices/functions/even/isEven.js
+07f6d59b429ac9a8ceff3251616ac803e0637a3ae895fdf23867c7306c69434d *./exercices/functions/even/isEven.js
+./exercices/functions/even/README.md
+1234535a24da781fae83eca0b6a4dab382167d3b7e0e0cfe320fffe7a3eae7e2 *./exercices/functions/even/README.md
 ./exercices/functions/minimum/min.js
 0527df3286cdb9ca2df3a7cad4041f4bebe4be17719ddd0d9e75c213d7915441 *./exercices/functions/minimum/min.js
 ./exercices/functions/minimum/README.md
@@ -26,6 +54,24 @@ f7521a2a55fd213aa24fd557ec4c184d2d590226e32c1da3bb571fc0e8909859 *./exercices/lo
 d6b1dc7066b453d28d10e934a8d1b4b0f7b87399edc48ba8a9d5d80dbcc54300 *./exercices/loops/triangle/README.md
 ./exercices/loops/triangle/triangle.js
 94d7494dbe3f29edb5d69a5d85c6b6a443b0f361cddb430cad7f1c5a46eaa392 *./exercices/loops/triangle/triangle.js
+./exercices/textScripts/dominantDirection/dominantDirection.js
+4908d2c64172957202f2e3f6f386a4ebabcdea354fcf3078c97990eef78812c8 *./exercices/textScripts/dominantDirection/dominantDirection.js
+./exercices/textScripts/dominantDirection/README.md
+874ae6bdf468bd3b9648007199a4813564d0efb2dd75873cd4d91b73f1881db8 *./exercices/textScripts/dominantDirection/README.md
+./exercices/textScripts/every/every.js
+12bf4028821a83715000cc9225e1393c87953fe3bbd0b43d24f874e98402c9e1 *./exercices/textScripts/every/every.js
+./exercices/textScripts/every/README.md
+d821aefca4af8babcf663a9d035aba63b7c29f4b56accea5f3d2ad443157c69c *./exercices/textScripts/every/README.md
+./exercices/textScripts/flattening/Flattening.js
+26a729a436a50399747da26f227662f502b9efc0f7973484763996546e7e72af *./exercices/textScripts/flattening/Flattening.js
+./exercices/textScripts/flattening/README.md
+3839ee1e7688da8a4089810644a7c01a0154c0ff30f183698e610d27d2f8cb87 *./exercices/textScripts/flattening/README.md
+./exercices/textScripts/loop/loop.js
+791ef0c6668165f9b28996ea6671556f6e2f5443981dbc843d973020bdfc7989 *./exercices/textScripts/loop/loop.js
+./exercices/textScripts/loop/README.md
+8cda3074c94cd6b999fb79dc3c7987a65d41811af06103602bf5dbecac0a2ae9 *./exercices/textScripts/loop/README.md
+./exercices/textScripts/README.md
+79001fb6c7286a45215a33cf39a39af276e46e6fa12d89ea16d5c89c0333aaed *./exercices/textScripts/README.md
 ./jsmemo.md
 d649e616c053cff4995d1e0152cf6818b83c290c4bef5813dacadf23dd9f307e *./jsmemo.md
 ./README.md
