@@ -1,7 +1,5 @@
 ./checksums.txt
 5d5855ecde392667a6a5211442f52a4a62730df5d4e76520b6811b9d3b17c33c *./checksums.txt
-./checksums.txt~
-05113dd27d01edc0be158f378af1a11a9cbd0605353276dff326c8dfd1b81de1 *./checksums.txt~
 ./exercices/arrays/arrayToList/arrayToList.js
 0377806df2f258a80963e6f5cf889f86649aa0377176ff317d632c65b3be4c68 *./exercices/arrays/arrayToList/arrayToList.js
 ./exercices/arrays/arrayToList/README.md
@@ -54,6 +52,20 @@ f7521a2a55fd213aa24fd557ec4c184d2d590226e32c1da3bb571fc0e8909859 *./exercices/lo
 d6b1dc7066b453d28d10e934a8d1b4b0f7b87399edc48ba8a9d5d80dbcc54300 *./exercices/loops/triangle/README.md
 ./exercices/loops/triangle/triangle.js
 94d7494dbe3f29edb5d69a5d85c6b6a443b0f361cddb430cad7f1c5a46eaa392 *./exercices/loops/triangle/triangle.js
+./exercices/object/Group/Group.js
+ba3b902d8b87919a0b79b5836a271067ce62ec92657e644abc7af123dbd15ee9 *./exercices/object/Group/Group.js
+./exercices/object/Group/README.md
+c246d4b2a63718652a2a5bc3c3b322427c08be10d5228230d180bcb813550485 *./exercices/object/Group/README.md
+./exercices/object/iterable/Iterable.js
+5611238b1cd33227dc70fed6b48592253f8bc00c99eacd18297f5070adf70cd2 *./exercices/object/iterable/Iterable.js
+./exercices/object/iterable/README.md
+38a7df4ae55bedc3086a9a65d95b4d1899688c04e2c960fcde81777137c26da1 *./exercices/object/iterable/README.md
+./exercices/object/README.md
+6b11d97bea79d90799bf97ef28646a93e8af3b511a8ad13f2afb6de396d3082e *./exercices/object/README.md
+./exercices/object/vector/README.md
+43b988c6c09e66044a60a8ca7d3840545a395e4712e3f0dad13cbbcbf4c0f22d *./exercices/object/vector/README.md
+./exercices/object/vector/Vec.js
+65dee2f17b36b12b74560253ffb3a9276a203b609344b72872ca91e5a273560c *./exercices/object/vector/Vec.js
 ./exercices/textScripts/dominantDirection/dominantDirection.js
 4908d2c64172957202f2e3f6f386a4ebabcdea354fcf3078c97990eef78812c8 *./exercices/textScripts/dominantDirection/dominantDirection.js
 ./exercices/textScripts/dominantDirection/README.md
@@ -75,4 +87,4 @@ d821aefca4af8babcf663a9d035aba63b7c29f4b56accea5f3d2ad443157c69c *./exercices/te
 ./jsmemo.md
 d649e616c053cff4995d1e0152cf6818b83c290c4bef5813dacadf23dd9f307e *./jsmemo.md
 ./README.md
-adfb5ba4338432e42fa759527c9773178c014661124c0a6b4d534b9e32adfbaf *./README.md
+6770b0b927094b4f4e4f5e18d57319723c3d64a2e000963c93ddae957a6d2f83 *./README.md
