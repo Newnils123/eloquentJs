@@ -60,6 +60,10 @@ c246d4b2a63718652a2a5bc3c3b322427c08be10d5228230d180bcb813550485 *./exercices/ob
 5611238b1cd33227dc70fed6b48592253f8bc00c99eacd18297f5070adf70cd2 *./exercices/object/iterable/Iterable.js
 ./exercices/object/iterable/README.md
 38a7df4ae55bedc3086a9a65d95b4d1899688c04e2c960fcde81777137c26da1 *./exercices/object/iterable/README.md
+./exercices/object/map/map.js
+29d447de3b0de8bf19ca62354a940c29c17e42b9b34c8327152b128de868f702 *./exercices/object/map/map.js
+./exercices/object/map/README.md
+3e94ebcb4f22bf8d4f6a7f08bffa3e94d54861fd4dbd05eb9700196a17d5ca11 *./exercices/object/map/README.md
 ./exercices/object/README.md
 6b11d97bea79d90799bf97ef28646a93e8af3b511a8ad13f2afb6de396d3082e *./exercices/object/README.md
 ./exercices/object/vector/README.md
