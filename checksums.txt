@@ -1,5 +1,7 @@
 ./checksums.txt
 5d5855ecde392667a6a5211442f52a4a62730df5d4e76520b6811b9d3b17c33c *./checksums.txt
+./checksums.txt~
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 *./checksums.txt~
 ./exercices/arrays/arrayToList/arrayToList.js
 0377806df2f258a80963e6f5cf889f86649aa0377176ff317d632c65b3be4c68 *./exercices/arrays/arrayToList/arrayToList.js
 ./exercices/arrays/arrayToList/README.md
@@ -70,6 +72,12 @@ c246d4b2a63718652a2a5bc3c3b322427c08be10d5228230d180bcb813550485 *./exercices/ob
 43b988c6c09e66044a60a8ca7d3840545a395e4712e3f0dad13cbbcbf4c0f22d *./exercices/object/vector/README.md
 ./exercices/object/vector/Vec.js
 65dee2f17b36b12b74560253ffb3a9276a203b609344b72872ca91e5a273560c *./exercices/object/vector/Vec.js
+./exercices/robot/compareRobots/countstep.js
+236186ed4d87057c537bfcca2236b94e1ab079f1d4c8f454ae58a00883f3cb32 *./exercices/robot/compareRobots/countstep.js
+./exercices/robot/compareRobots/README.md
+5f4ea16066dd486dcb797dd63d09bb9e2def64bf49e8801dd8845640f9939f3e *./exercices/robot/compareRobots/README.md
+./exercices/robot/README.md
+24694dd9173b4228bc8cf4b48e8f1fc6f11c48a3df9674b90ba323575e05e6eb *./exercices/robot/README.md
 ./exercices/textScripts/dominantDirection/dominantDirection.js
 4908d2c64172957202f2e3f6f386a4ebabcdea354fcf3078c97990eef78812c8 *./exercices/textScripts/dominantDirection/dominantDirection.js
 ./exercices/textScripts/dominantDirection/README.md
